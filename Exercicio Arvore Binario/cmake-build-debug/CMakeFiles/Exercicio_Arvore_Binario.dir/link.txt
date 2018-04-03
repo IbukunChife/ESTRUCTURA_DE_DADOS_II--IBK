@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Exercicio_Arvore_Binario.dir/arv_bin.c.o CMakeFiles/Exercicio_Arvore_Binario.dir/principal.c.o CMakeFiles/Exercicio_Arvore_Binario.dir/fila.c.o CMakeFiles/Exercicio_Arvore_Binario.dir/funcao.c.o CMakeFiles/Exercicio_Arvore_Binario.dir/pila.c.o  -o Exercicio_Arvore_Binario 

@@ -1,0 +1,86 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.c
+stdio.h
+-
+stdlib.h
+-
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/fila.c
+stdio.h
+-
+stdlib.h
+-
+fila.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/fila.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/fila.h
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/funcao.c
+stdio.h
+-
+stdlib.h
+-
+fila.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/fila.h
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+funcao.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/funcao.h
+pila.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/pila.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/funcao.h
+stdio.h
+-
+stdlib.h
+-
+fila.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/fila.h
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/pila.c
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+pila.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/pila.h
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/pila.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/principal.c
+stdio.h
+-
+stdlib.h
+-
+arv_bin.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/arv_bin.h
+funcao.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/Exercicio Arvore Binario/funcao.h
+
