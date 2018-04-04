@@ -117,10 +117,14 @@ void imprimir_Pos_OrdemNaoRecursivo(Nodo* raiz ){
     Nodo* p = raiz;
     Nodo* q = raiz;
         while (p != NULL) {
-            for ( ; p->esq != NULL; p = p->esq)
-                push(pi,p);
-            while (p != NULL && (p->dir == NULL ||
-                                 p->dir == q)) {
+            /* for ( ; p->esq != NULL; p = p->esq)
+                 push(pi,p);*/
+            while (p->dir != NULL) {
+                push (pi , p);
+                p = p->dir;
+            }
+            while (p != NULL && (p->esq == NULL ||
+                                 p->esq == q)) {
                 printf("%c ",p->info);
                 q = p;
                 if (pila_vazia (pi))
@@ -128,6 +132,73 @@ void imprimir_Pos_OrdemNaoRecursivo(Nodo* raiz ){
                 p = pop(pi);
             }
             push(pi,p);
-            p = p->dir;
+            p = p->esq;
         }
+}
+
+int Numero_De_Folha_Arvore(ArvBin *arvore) {
+    return Numero_De_Folha_No (arvore->raiz);
+}
+
+int Numero_De_Folha_No(Nodo *raiz) {
+    int contador = 0;
+    if ( raiz != NULL) {
+        if ( raiz->esq == NULL && raiz->dir == NULL) {
+            return 1;
+        }
+        if ( raiz->esq != NULL && raiz->dir == NULL) {
+            contador += Numero_De_Folha_No (raiz->esq);
+        }
+        if ( raiz->esq == NULL && raiz->dir != NULL) {
+            contador += Numero_De_Folha_No (raiz->dir);
+        }
+        if ( raiz->esq != NULL && raiz->dir != NULL) {
+            contador += Numero_De_Folha_No (raiz->esq);
+            contador += Numero_De_Folha_No (raiz->dir);
+        }
+        return contador;
+    }
+
+}
+
+bool Verificar_Arvore_Estreitamente_binaria(ArvBin *arvore) {
+    return Verificar_No_Estreitamente_binaria (arvore->raiz);
+}
+
+bool Verificar_No_Estreitamente_binaria(Nodo *raiz) {
+    int contador = 0;
+    if ( raiz != NULL) {
+        if ( raiz->esq == NULL && raiz->dir == NULL) {
+            contador += 0;
+        }
+        if ( raiz->esq != NULL && raiz->dir == NULL) {
+            contador += 1;
+        }
+        if ( raiz->esq == NULL && raiz->dir != NULL) {
+            contador += 1;
+        }
+        if ( raiz->esq != NULL && raiz->dir != NULL) {
+            contador += 0;
+
+        }
+        contador += Numero_De_Folha_No (raiz->esq);
+        contador += Numero_De_Folha_No (raiz->dir);
+        return contador == 0 ? true : false;
+    }
+
+}
+
+bool Verificar_Arvore_completa(ArvBin *arvore) {
+    return Verificar_No_completa (arvore->raiz);
+}
+
+bool Verificar_No_completa(Nodo *raiz) {
+    if ( raiz == NULL) {
+        return -1;
+    }
+    int altura_esq = 1 + arv_altura_no (raiz->esq);
+    int altura_dir = 1 + arv_altura_no (raiz->dir);
+
+    return altura_esq == altura_dir ? true : false;
+
 }

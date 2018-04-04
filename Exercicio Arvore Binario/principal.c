@@ -59,6 +59,24 @@ int main (){
     imprime_escolhendo_ordemNaoRecursivo(espelho,3);
 
 
+    printf ("\n\n Imprimindo o NUMERO DE FOLHA DE UMA ARVORE \n\n");
+    printf ("O numero de Folha da Arvore é: %d \n" , Numero_De_Folha_Arvore (Pai));
+
+    printf ("\n\n Verificando se A ARVORE É ESTREITAMENTE BINARIA \n\n");
+    if ( Verificar_Arvore_Estreitamente_binaria (Pai)) {
+        printf ("\n ARVORE É ESTREITAMENTE BINARIA \n");
+    } else {
+        printf ("\n ARVORE não É ESTREITAMENTE BINARIA \n");
+    }
+
+    printf ("\n\n Verificando se A ARVORE É COMPLETA \n\n");
+    if ( Verificar_Arvore_completa (Pai)) {
+        printf ("\n ARVORE É COMPLETA \n");
+    } else {
+        printf ("\n ARVORE não É COMPLETA \n");
+    }
+
+
 
    arv_libera(Pai);
    arv_libera (espelho);
