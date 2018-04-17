@@ -1,0 +1,228 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct no{
+    int chave;
+    struct no * esq;
+    struct no * dir;
+}Nodo;
+
+typedef struct arv{
+    Nodo* raiz;
+}ArvBin;
+
+ArvBin* criar_arv(){
+    ArvBin* pai = (ArvBin *)malloc (sizeof (ArvBin));
+    pai->raiz= NULL;
+    return pai;
+}
+
+Nodo* criar_no(int valor){
+    Nodo* novo = (Nodo*)malloc (sizeof (Nodo));
+    novo->chave = valor;
+    novo->esq= novo->dir= NULL;
+    return novo;
+}
+
+ Nodo* buscar_no (Nodo* raiz, int valor) {
+    while (raiz != NULL && raiz->chave != valor) {
+        if ( valor < raiz->chave ) {
+            raiz = raiz->esq;
+        } else if ( valor > raiz->chave ) {
+            raiz = raiz->dir;
+        }
+        return raiz;
+    }
+}
+
+Nodo* buscar_ArvBinBuscar(ArvBin* arv , int valor){
+    return buscar_no (arv->raiz,valor);
+}
+
+static Nodo* inserir_no (Nodo* raiz, int valor){
+    if(raiz==NULL){
+        raiz = criar_no (valor);
+    }else if( valor< raiz->chave){
+        raiz->esq = inserir_no (raiz->esq,valor);
+    }else if(valor > raiz->chave){
+        raiz->dir = inserir_no (raiz->dir,valor);
+    }
+    return raiz;
+}
+
+void inserir_ArvBinBusca(ArvBin* arv, int valor){
+    arv->raiz = inserir_no (arv->raiz,valor);
+}
+
+int  verificar_filho(Nodo* raiz){
+    if(raiz->esq != NULL && raiz->dir == NULL){
+        return 1;
+    }
+    if(raiz->esq == NULL && raiz->dir != NULL){
+        return 1;
+    }
+    if(raiz->esq == NULL && raiz->dir == NULL){
+        return 0;
+    }
+    if(raiz->esq != NULL && raiz->dir != NULL){
+        return 2;
+    }
+}
+
+Nodo* remover_no(Nodo* raiz, int k){
+    if (raiz == NULL){
+        return NULL;
+    }else if (k < raiz->chave){
+        raiz->esq = remover_no (raiz->esq,k);
+    }else if (k> raiz->chave){
+        raiz->dir = remover_no (raiz->dir, k);
+    }else{
+        int n = verificar_filho (raiz);
+        if(n == 0){
+            Nodo* aus = raiz;
+            free(aus);
+            raiz = NULL;
+        }
+        if(n == 1){
+            if(raiz->esq){
+                Nodo* aus = raiz;
+                raiz= raiz->esq;
+                free(aus);
+            }
+            if(raiz->dir){
+                Nodo* aus = raiz;
+                raiz = raiz->dir;
+                free (aus);
+            }
+
+        }
+        if(n == 2){
+            Nodo* p = raiz->esq;
+            while (p->dir!=NULL){
+                p=p->dir;
+            }
+            raiz->chave = p->chave;
+            p->chave = k;
+            raiz->esq= remover_no (raiz->esq,k);
+
+        }
+
+    }
+    return raiz;
+
+
+}
+
+void remover_ArvBinBusca(ArvBin* arv, int valor){
+    arv->raiz = remover_no (arv->raiz, valor);
+
+}
+
+int achar_ultimo_PreOrdem(Nodo* raiz){
+    while(raiz->dir!=NULL){
+        raiz= raiz->dir;
+    }
+    if(raiz->esq==NULL){
+        return raiz->chave;
+    }else {
+        return achar_ultimo_PreOrdem (raiz->esq);
+    }
+
+}
+void imprimir_PreOrdem(Nodo* raiz,int ultimo){
+    if (raiz!=NULL){
+        if(raiz->chave == ultimo ){
+            printf (" %d",raiz->chave);
+        }else{
+            printf (" %d",raiz->chave);
+        }
+        imprimir_PreOrdem (raiz->esq,ultimo);
+        imprimir_PreOrdem (raiz->dir,ultimo);
+    }
+
+}
+
+int achar_ultimo_EnOrdem(Nodo* raiz){
+    while(raiz->dir!=NULL){
+        raiz= raiz->dir;
+    }
+    return raiz->chave;
+}
+void imprimir_EmOrdem(Nodo* raiz,int ultimo){
+    if(raiz!=NULL){
+        imprimir_EmOrdem (raiz->esq,ultimo);
+        if(raiz->chave == ultimo ){
+            printf (" %d",raiz->chave);
+        }else{
+            printf (" %d",raiz->chave);
+        }
+        imprimir_EmOrdem (raiz->dir,ultimo);
+    }
+
+}
+
+int achar_ultimo_PostOrdem(Nodo* raiz){
+    if(raiz!=NULL){
+        return raiz->chave;
+    }
+
+}
+
+void imprimir_PosOrdem(Nodo* raiz,int ultimo){
+    if (raiz!=NULL){
+        imprimir_PosOrdem (raiz->esq,ultimo);
+        imprimir_PosOrdem (raiz->dir,ultimo);
+        if(raiz->chave == ultimo ){
+            printf (" %d",raiz->chave);
+        }else{
+            printf (" %d",raiz->chave);
+        }
+    }
+
+}
+
+void imprimir_ArvBinBusca(ArvBin* arv){
+    int Ultimo_PreOrdem = achar_ultimo_PreOrdem (arv->raiz);
+    printf ("Pre.:");
+    imprimir_PreOrdem (arv->raiz, Ultimo_PreOrdem);printf ("\n");
+    int Ultimo_InOrdem = achar_ultimo_EnOrdem (arv->raiz);
+    printf ("In..:");
+    imprimir_EmOrdem (arv->raiz,Ultimo_InOrdem);printf ("\n");
+    int Ultimo_PostOrdem = achar_ultimo_PostOrdem (arv->raiz);
+    printf ("Post:");
+    imprimir_PosOrdem (arv->raiz,Ultimo_PostOrdem);printf ("\n");
+
+}
+
+void liberar_no(Nodo* raiz){
+    if (raiz!=NULL){
+        liberar_no (raiz->esq);
+        liberar_no (raiz->dir);
+        free(raiz);
+    }
+}
+
+void liberar_ArvBinBusca(ArvBin* arv){
+    liberar_no (arv->raiz);
+    free(arv);
+}
+int main() {
+   int Case =0 , N=0 , valor;
+   while(scanf ("%d",&Case)!=EOF){
+       for(int i = 1; i<=Case;i++){
+           ArvBin* Pai = criar_arv ();
+           scanf("%d",&N);
+           for (int j=0; j<N; j++){
+               scanf ("%d",&valor);
+               inserir_ArvBinBusca (Pai,valor);
+           }
+           setbuf (stdin,NULL);
+           printf ("\nCase %d:\n",i);
+           imprimir_ArvBinBusca (Pai);
+           //printf ("\n");
+           liberar_ArvBinBusca (Pai);
+       }
+   }
+
+    return 0;
+}
