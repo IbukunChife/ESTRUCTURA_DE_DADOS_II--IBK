@@ -1,0 +1,3 @@
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/04/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/04/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/04/cmake-build-debug/CMakeFiles/ExercicioEmSala.dir

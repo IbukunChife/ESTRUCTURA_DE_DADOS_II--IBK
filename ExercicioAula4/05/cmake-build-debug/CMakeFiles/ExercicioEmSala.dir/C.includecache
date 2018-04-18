@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/05/05.c
+stdio.h
+-
+stdlib.h
+-
+ArvBinBusca.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/05/ArvBinBusca.h
+stdbool.h
+-
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/05/ArvBinBusca.c
+stdio.h
+-
+stdlib.h
+-
+ArvBinBusca.h
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/05/ArvBinBusca.h
+
+/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ExercicioAula4/05/ArvBinBusca.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+

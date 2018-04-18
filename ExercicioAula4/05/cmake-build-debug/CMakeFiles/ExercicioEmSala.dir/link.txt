@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/ExercicioEmSala.dir/ArvBinBusca.c.o CMakeFiles/ExercicioEmSala.dir/05.c.o  -o ExercicioEmSala 
