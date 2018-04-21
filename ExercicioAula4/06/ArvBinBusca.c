@@ -128,3 +128,21 @@ void imprimir_In_ordem(Nodo * arv) {
         imprimir_In_ordem (arv->dir);
     }
 }
+
+int vet[100];
+
+void k_esimo(ArvBin* arv, int position){
+    int i = 0;
+    int*ptr = &i;
+    vet_Info_no(arv->raiz, ptr);
+    printf("%d\n", vet[position]);
+}
+
+void vet_Info_no(Nodo* raiz, int*ptr){
+    if(raiz != NULL)
+    {
+        vet_Info_no (raiz->esq,ptr);
+        vet[(*ptr)++] = raiz->valor;
+        vet_Info_no (raiz->dir,ptr);
+    }
+}
