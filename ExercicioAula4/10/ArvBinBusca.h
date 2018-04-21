@@ -32,6 +32,8 @@ void libera_no(Nodo* raiz);
 void imprimir_arvore(ArvBin * arv);
 void imprimir_In_ordem(Nodo * arv);
 int verificar_filho(Nodo* raiz);
+int* listar_arvore(ArvBin* arv, int n);
+void vet_Info_no(Nodo* raiz, int*ptr, int* vet);
 
 
 #endif //EXERCICIOEMSALA_ARVBINBUSCA_H

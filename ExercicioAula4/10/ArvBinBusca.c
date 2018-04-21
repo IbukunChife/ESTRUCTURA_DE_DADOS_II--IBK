@@ -128,3 +128,20 @@ void imprimir_In_ordem(Nodo * arv) {
         imprimir_In_ordem (arv->dir);
     }
 }
+
+int* listar_arvore(ArvBin* arv, int n){
+    int * vet= (int*)malloc (n* sizeof (int*));
+    int i = 0;
+    int*ptr = &i;
+    vet_Info_no(arv->raiz, ptr , vet);
+    return  vet;
+}
+
+void vet_Info_no(Nodo* raiz, int*ptr, int* vet){
+    if(raiz != NULL)
+    {
+        vet_Info_no (raiz->esq,ptr,vet);
+        vet[(*ptr)++] = raiz->valor;
+        vet_Info_no (raiz->dir,ptr,vet);
+    }
+}
