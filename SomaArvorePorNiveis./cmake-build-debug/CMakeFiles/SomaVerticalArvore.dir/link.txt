@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/SomaVerticalArvore.dir/main.c.o CMakeFiles/SomaVerticalArvore.dir/arv.c.o  -o SomaVerticalArvore 

@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/1200.dir/main.c.o CMakeFiles/1200.dir/ex.c.o  -o 1200 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="1861"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1861">
+				<Option output="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug/1861" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 1861"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="1861/fast">
+				<Option output="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug/1861" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 1861/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/IBK/Dropbox/4eme\ Semestre/ESTRUTURAS\ DE\ DADOS\ II/ARQUIVOS\ EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade\ 2\ -\ Árvore\ Binária\ de\ Busca/1861/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/main.c">
+			<Option target="1861"/>
+		</Unit>
+		<Unit filename="/home/IBK/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/Atividade 2 - Árvore Binária de Busca/1861/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

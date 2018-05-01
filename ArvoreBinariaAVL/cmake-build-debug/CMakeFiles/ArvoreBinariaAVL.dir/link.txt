@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/ArvoreBinariaAVL.dir/main.c.o CMakeFiles/ArvoreBinariaAVL.dir/Avl.c.o  -o ArvoreBinariaAVL 

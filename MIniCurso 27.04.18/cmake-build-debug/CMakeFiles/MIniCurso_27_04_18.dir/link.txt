@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/MIniCurso_27_04_18.dir/2204_ParaBomba.c.o  -o MIniCurso_27_04_18 
