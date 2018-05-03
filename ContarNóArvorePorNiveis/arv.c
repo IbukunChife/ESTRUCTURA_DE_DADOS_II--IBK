@@ -43,7 +43,19 @@ static Nodo* inserir_no(Nodo* raiz,int k,Lista* l,int col){
     return raiz;
 
 }
-
+/////////////////OUTRA--POSSIBILIDADE--//////////////////////////////////////
+void Procurar_numero_de_no_arvore(ArvBin* arv, int Nivel){
+    printf("O numero de no Nivel %d é : %d. \n",Nivel,Procura_Numero_de_No(arv->raiz,Nivel,0));
+}
+int Procura_Numero_de_No(Nodo* raiz, int l, int niveis){
+    if (raiz == NULL){
+        return 0;
+    }else if (niveis == l){
+        return 1;
+    }
+    return Procura_Numero_de_No(raiz->esq,l,niveis+1) + Procura_Numero_de_No(raiz->dir,l,niveis+1);
+}
+/////////////////////////////////////////////////////////////////////////////////
 void imprimir_arvore(ArvBin * Pai){
     imprimir_In_ordem (Pai->raiz);
 }

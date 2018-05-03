@@ -46,6 +46,8 @@ void libera_no(Nodo* raiz);
 Lista* criar_Lista();
 void  inserir_Lista (Lista* f ,int numero);
 void adicionar_numero_No(Lista* l,Nodo * raiz);
+void Procurar_numero_de_no_arvore(ArvBin* arv, int Nivel);
+int Procura_Numero_de_No(Nodo* raiz, int l, int niveis);
 bool verificar_coluna(Lista* l, int numero);
 void liberar_Lista(Lista * l);
 
