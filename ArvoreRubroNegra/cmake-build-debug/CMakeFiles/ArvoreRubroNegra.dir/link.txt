@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/ArvoreRubroNegra.dir/main.c.o CMakeFiles/ArvoreRubroNegra.dir/RubroNegra.c.o  -o ArvoreRubroNegra 
