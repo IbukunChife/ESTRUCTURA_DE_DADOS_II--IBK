@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/ArvoreB.dir/main.c.o CMakeFiles/ArvoreB.dir/Arv.c.o  -o ArvoreB 
