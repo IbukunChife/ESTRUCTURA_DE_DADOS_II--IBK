@@ -35,7 +35,7 @@ static void Split_filhos(Btree *btree, Pagina *Pai, int index, Pagina *fil) {
     irmao->nivel = fil->nivel;
     irmao->num = (order / 2) - 1;
 
-    // Copy the higher order keys to the new child
+    // Copie as chaves de maior ordem para o novo filho
     for (i = 0; i < irmao->num; i++) {
         irmao->chaves[i] = fil->chaves[i + meio];
         if (!fil->folha) {
@@ -44,7 +44,7 @@ static void Split_filhos(Btree *btree, Pagina *Pai, int index, Pagina *fil) {
         }
     }
 
-    // Copy the last child pointer
+    // Copie o último ponteiro filho
     if (!fil->folha) {
         irmao->filhos[i] =
                 fil->filhos[i + meio];
@@ -189,7 +189,7 @@ static Pagina *merge_irmao(Btree *btree, Pagina *Pai, unsigned int index, positi
 static void mover_Chave(Btree *btree, Pagina *node, unsigned int index, position_t pos) {
     Pagina *Esq_child;
     Pagina *Dir_child;
-    unsigned int i;
+     int i;
 
     if (pos == right) {
         index--;
@@ -197,7 +197,7 @@ static void mover_Chave(Btree *btree, Pagina *node, unsigned int index, position
     Esq_child = node->filhos[index];
     Dir_child = node->filhos[index + 1];
 
-    // Move the key from the parent to the left child
+    // Mova a chave do pai para o filho esquerdo
     if (pos == left) {
         Esq_child->chaves[Esq_child->num] = node->chaves[index];
         Esq_child->filhos[Esq_child->num + 1] = Dir_child->filhos[0];
@@ -215,7 +215,7 @@ static void mover_Chave(Btree *btree, Pagina *node, unsigned int index, position
                 Dir_child->filhos[Dir_child->num];
         Dir_child->num--;
     } else {
-        // Move the key from the parent to the right child
+        // Mova a chave do pai para o filho certo
         for (i = Dir_child->num; i > 0; i--) {
             Dir_child->chaves[i] = Dir_child->chaves[i - 1];
             Dir_child->filhos[i + 1] = Dir_child->filhos[i];
@@ -285,30 +285,26 @@ Pag_pos busca_chave(Btree *btree, int val) {
 
     for (;; i = 0) {
 
-        // Fix the index of the key greater than or equal
-        // to the key that we would like to search
+        // Achar o indice da chave maior ou igual
+        //  da chaves que estamos procurando
 
         while (i < node->num && info > node->chaves[i]) {
             i++;
         }
 
-        // If we find such key return the key-value pair
         if (i < node->num && val == node->chaves[i]) {
             kp.nodo = node;
             kp.index = i;
             return kp;
         }
 
-        // If the node is leaf and if we did not find the key
-        // return NULL
         if (node->folha) {
             return kp;
         }
 
-        // To got a child node
         node = node->filhos[i];
     }
-    //   return kp;
+    return kp;
 
 }
 
@@ -318,8 +314,7 @@ Pag_pos busca_chave(Btree *btree, int val) {
 
 int remove_Chave_dentro_Pagina(Btree *btree, Pag_pos *node_pos) {
     unsigned int Max_Chave = btree->ORDEM - 1;
-    unsigned int i;
-    int val;
+    int i;
     Pagina *no = node_pos->nodo;
 
     if (no->folha == false) {
@@ -360,32 +355,30 @@ int remover_Chave_NaArvore(Btree *btree, Pagina *subtree, int val) {
     del_loop:
     for (i = 0;; i = 0) {
 
-        //If there are no keys simply return
+        //Se não tem nenhuma chave return -1
         if (!node->num)
             return -1;
 
-        // Fix the index of the key greater than or equal
-        // to the key that we would like to search
+        // Achar o indice da chave maior ou igual
+        //  da chavs qu estamos procurando
 
         while (i < node->num && kv > node->chaves[i]) {
             i++;
         }
         index = i;
 
-        // If we find such key break
         if (i < node->num && kv == node->chaves[i]) {
             break;
         }
         if (node->folha)
             return -1;
 
-        //Store the parent node
         Pai = node;
 
-        // To get a child node
+        // obter o nodo filho
         node = node->filhos[i];
 
-        //If NULL not found
+
         if (node == NULL)
             return -1;
 
@@ -401,30 +394,30 @@ int remover_Chave_NaArvore(Btree *btree, Pagina *subtree, int val) {
         }
 
         if (node->num == meio - 1 && Pai) {
-            // The current node has (t - 1) keys but the right sibling has > (t - 1)
-            // keys
+            // a  Pagina Atual tem (t - 1) chaves mas o irmao na direita tem tambem (t - 1)
+            //                // chaves
             if (Dir_irmao && (Dir_irmao->num > meio - 1)) {
                 mover_Chave(btree, Pai, i, left);
             } else
-                // The current node has (t - 1) keys but the left sibling has (t - 1)
-                // keys
+                // a  Pagina Atual tem (t - 1) chaves mas o irmao na esquerda tem tambem (t - 1)
+                // chaves
             if (Esq_irmao && (Esq_irmao->num > meio - 1)) {
                 mover_Chave(btree, Pai, i, right);
             } else
-                // Left sibling has (t - 1) keys
+                // o irmao Esquerdo tem (t - 1) chaves
             if (Esq_irmao && (Esq_irmao->num == meio - 1)) {
                 node = merge_irmao(btree, Pai, i, left);
             } else
-                // Right sibling has (t - 1) keys
+                // o irmao Direito tem (t - 1) chaves
             if (Dir_irmao && (Dir_irmao->num == meio - 1)) {
                 node = merge_irmao(btree, Pai, i, right);
             }
         }
     }
 
-    //Case 1 : The node containing the key is found and is the leaf node.
-    //Also the leaf node has keys greater than the minimum required.
-    //Simply remove the key
+    //Case 1 :  a pagina que contem a chave é achado e é a pagina folha.
+    //Inclusive a pagina folha tem as chaves maior que o ninimum requerido.
+    //Simplesmente remover a chave
     if (node->folha && (node->num > meio - 1)) {
         node_pos.nodo = node;
         node_pos.index = index;
@@ -442,14 +435,13 @@ int remover_Chave_NaArvore(Btree *btree, Pagina *subtree, int val) {
     }
 
 
-    //Case 2: The node containing the key is found and is an internal node
+    //Case 2: O nó que contém a chave é encontrado e é um nó interno
     if (node->folha == false) {
         if (node->filhos[index]->num > meio - 1) {
             sub_node_pos = Obter_pos_chave_max(btree, node->filhos[index]);
             info1 = sub_node_pos.nodo->chaves[sub_node_pos.index];
 
             info2 = info1;
-            //         copy_key_val(btree, key_val, new_key_val);
             node->chaves[index] = info2;
 
             remover_Chave_NaArvore(btree, node->filhos[index], info1);
@@ -489,10 +481,6 @@ int remover_Chave_NaArvore(Btree *btree, Pagina *subtree, int val) {
     }
 
     // Case 3:
-    // In this case start from the top of the tree and continue
-    // moving to the leaf node making sure that each node that
-    // we encounter on the way has atleast 't' (order of the tree)
-    // keys
     if (node->folha && (node->num > meio - 1)) {
         node_pos.nodo = node;
         node_pos.index = index;
@@ -564,13 +552,11 @@ static Pag_pos Obter_pos_chave_min(Btree *btree, Pagina *subtree) {
 }
 
 /**
-*       Used to destory btree
-*       @param btree The B-tree
-*       @return none
+* Liberar Arvore B
 */
 void liberar_ArvoreB(Btree * btree) {
     int i = 0;
-    unsigned int nivel_atual;
+     int nivel_atual;
 
     Pagina * head, * tail, * node;
     Pagina * child, * del_node;
@@ -605,12 +591,9 @@ void liberar_ArvoreB(Btree * btree) {
 
 
 /**
-*	Used to print the keys of the bt_node
-*	@param node The node whose keys are to be printed
-*	@return none
+* É usado para Imprimir os Chaves numa Pagina Dada
 */
-
-static void imprimir_Pagina(Btree *btree, Pagina * node) {
+void imprimir_Pagina(Btree *btree, Pagina * node) {
 
 	int i = 0;
 
@@ -623,13 +606,9 @@ static void imprimir_Pagina(Btree *btree, Pagina * node) {
 }
 
 /**
-*       Function used to print the B-tree
-*       @param root Root of the B-Tree
-*       @param print_key Function used to print the key value
-*       @return none
+* Imprimir a Arvore B
 */
-
-void print_subtree(Btree *btree,Pagina * node) {
+void Imprimir_SubArvore(Btree *btree,Pagina * node) {
 
 	int i = 0;
 	int nivel_atual;

@@ -59,8 +59,8 @@ static Pag_pos Obter_pos_chave_max(Btree *btree, Pagina *subtree);
 static Pag_pos Obter_pos_chave_min(Btree *btree, Pagina *subtree);
 
 Pag_pos busca_chave(Btree *btree, int val);
-
-
+void imprimir_Pagina(Btree *btree, Pagina * node);
+void Imprimir_SubArvore(Btree *btree,Pagina * node);
 static int Liberar_Pagina(Pagina *no);
 void liberar_ArvoreB(Btree * btree);
 

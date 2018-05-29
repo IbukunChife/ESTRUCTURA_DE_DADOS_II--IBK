@@ -1,4 +1,4 @@
-# Install script for directory: /home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ArvoreB
+# Install script for directory: /home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreB
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ATIVIDADE/ArvoreB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
