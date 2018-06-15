@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/ArvoreDeSegmentos.dir/main.c.o  -o ArvoreDeSegmentos 
