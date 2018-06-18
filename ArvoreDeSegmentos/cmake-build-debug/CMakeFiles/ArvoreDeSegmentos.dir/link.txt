@@ -1,1 +1,1 @@
-/usr/lib64/ccache/cc -g   CMakeFiles/ArvoreDeSegmentos.dir/main.c.o  -o ArvoreDeSegmentos 
+/usr/lib64/ccache/cc -g   CMakeFiles/ArvoreDeSegmentos.dir/main.c.o CMakeFiles/ArvoreDeSegmentos.dir/SegLazy.c.o  -o ArvoreDeSegmentos 

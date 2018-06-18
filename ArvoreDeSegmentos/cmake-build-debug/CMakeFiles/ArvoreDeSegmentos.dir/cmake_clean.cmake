@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ArvoreDeSegmentos.dir/main.c.o"
+  "CMakeFiles/ArvoreDeSegmentos.dir/SegLazy.c.o"
   "ArvoreDeSegmentos.pdb"
   "ArvoreDeSegmentos"
 )

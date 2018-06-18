@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/SegLazy.c" "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/cmake-build-debug/CMakeFiles/ArvoreDeSegmentos.dir/SegLazy.c.o"
   "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/main.c" "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/cmake-build-debug/CMakeFiles/ArvoreDeSegmentos.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

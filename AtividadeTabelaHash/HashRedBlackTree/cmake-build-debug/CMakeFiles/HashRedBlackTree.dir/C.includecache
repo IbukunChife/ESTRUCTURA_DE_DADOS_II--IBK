@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/HRNTree.c
+stdio.h
+-
+stdlib.h
+-
+HRNTree.h
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/HRNTree.h
+RubroNegra.c
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/RubroNegra.c
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/HRNTree.h
+RubroNegra.h
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/RubroNegra.h
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/RubroNegra.c
+stdio.h
+-
+stdlib.h
+-
+RubroNegra.h
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/RubroNegra.h
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/RubroNegra.h
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/main.c
+stdio.h
+-
+HRNTree.h
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/AtividadeTabelaHash/HashRedBlackTree/HRNTree.h
+math.h
+-
+time.h
+-
+stdlib.h
+-
+

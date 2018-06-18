@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/SegLazy.c">
+			<Option target="ArvoreDeSegmentos"/>
+		</Unit>
+		<Unit filename="/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/SegLazy.h">
+			<Option target="ArvoreDeSegmentos"/>
+		</Unit>
 		<Unit filename="/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/ArvoreDeSegmentos/main.c">
 			<Option target="ArvoreDeSegmentos"/>
 		</Unit>

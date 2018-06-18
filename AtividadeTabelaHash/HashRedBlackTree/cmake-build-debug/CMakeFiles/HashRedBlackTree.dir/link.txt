@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/HashRedBlackTree.dir/main.c.o CMakeFiles/HashRedBlackTree.dir/HRNTree.c.o  -o HashRedBlackTree 
