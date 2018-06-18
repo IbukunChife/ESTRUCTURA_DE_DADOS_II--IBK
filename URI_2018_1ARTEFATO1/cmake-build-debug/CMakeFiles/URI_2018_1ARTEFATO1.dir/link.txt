@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++  -g   CMakeFiles/URI_2018_1ARTEFATO1.dir/main.cpp.o  -o URI_2018_1ARTEFATO1 
