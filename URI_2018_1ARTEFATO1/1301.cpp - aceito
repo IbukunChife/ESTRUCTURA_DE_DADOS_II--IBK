@@ -53,7 +53,7 @@ void updateTreeNode(int index, int a, int b, int i, int x){ // atualiza a segtre
 	segTree[index] = segTree[index * 2] * segTree[index * 2 + 1];
 }
 
-int query(int index, int a, int b, int i, int j){ //função que retorna o valor da multiplicação do filho esq e dir dado o intervalo passado por argumento
+int query(int index, int a, int b, int i, int j){ //funÃ§Ã£o que retorna o valor da multiplicaÃ§Ã£o do filho esq e dir dado o intervalo passado por argumento
 	if (i > b || j < a)
         return 1;
 
