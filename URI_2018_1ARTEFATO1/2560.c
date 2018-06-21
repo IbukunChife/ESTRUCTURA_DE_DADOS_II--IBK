@@ -9,8 +9,8 @@ int min(int x, int y){
 int maior(int x, int y){
     return (x > y) ? x : y;
 }
-//¡RVORE DE SEGMENTO QUE ENCONTRA O MENOR
-void buildMinsegTree(int segTree[], int vet[], int low, int high, int pos){
+//√ÅRVORE DE SEGMENTO QUE ENCONTRA O MENOR
+void buildMinsegTree(long long int segTree[], int vet[], int low, int high, int pos){
 
     if(low == high){
         segTree[pos] = vet[low];
@@ -22,8 +22,8 @@ void buildMinsegTree(int segTree[], int vet[], int low, int high, int pos){
     }
 }
 
-//¡RVORE DE SEGMENTO QUE ENCORNTRA O MAIOR
-void buildMaxsegTree(int segTree[], int vet[], int low, int high, int pos){
+//√ÅRVORE DE SEGMENTO QUE ENCORNTRA O MAIOR
+void buildMaxsegTree(long long int segTree[], int vet[], int low, int high, int pos){
 
     if(low == high){
         segTree[pos] = vet[low];
@@ -35,8 +35,8 @@ void buildMaxsegTree(int segTree[], int vet[], int low, int high, int pos){
     }
 }
 
-//¡RVORE DE SEGMENTO DA SOMA
-int buildsegTreeSoma(int segTree[], int vet[], int low, int high, int pos){
+//√ÅRVORE DE SEGMENTO DA SOMA
+long long int buildsegTreeSoma(long long int segTree[], int vet[], int low, int high, int pos){
 
     if(low == high){
         segTree[pos] = vet[low];
@@ -51,7 +51,7 @@ int buildsegTreeSoma(int segTree[], int vet[], int low, int high, int pos){
 }
 
 //BUSCA EM UMA ARVORE DE SEGMENTO
-int searchMinimum(int segTree[], int low, int high, int qlow, int qhigh, int pos){
+long long int searchMinimum(long long int segTree[], int low, int high, int qlow, int qhigh, int pos){
 
     if(qlow <= low && qhigh >= high){
         return segTree[pos];
@@ -64,7 +64,7 @@ int searchMinimum(int segTree[], int low, int high, int qlow, int qhigh, int pos
                searchMinimum(segTree, mid + 1, high, qlow, qhigh, 2 * pos + 2));
 }
 
-int searchMaximum(int segTree[], int low, int high, int qlow, int qhigh, int pos){
+long long int searchMaximum(long long int segTree[], int low, int high, int qlow, int qhigh, int pos){
 
     if(qlow <= low && qhigh >= high){
         return segTree[pos];
@@ -77,7 +77,7 @@ int searchMaximum(int segTree[], int low, int high, int qlow, int qhigh, int pos
                searchMaximum(segTree, mid + 1, high, qlow, qhigh, 2 * pos + 2));
 }
 
-int searchSoma(int segTree[], int low, int high, int qlow, int qhigh, int pos){
+long long int searchSoma(long long int segTree[], int low, int high, int qlow, int qhigh, int pos){
 
     if(qlow <= low && qhigh >= high){
         return segTree[pos];
@@ -92,17 +92,17 @@ int searchSoma(int segTree[], int low, int high, int qlow, int qhigh, int pos){
 }
 
 int main() {
-    int segTreeMin[400000];
-    int segTreeMax[400000];
-    int segTreeSoma[400000];
-    int vet[400000];
+    long long int segTreeMin[800000];
+    long long int segTreeMax[800000];
+    long long int segTreeSoma[800000];
+    int vet[800000];
     int i, v, tam_segTree;
     int TAM, b;
 
-    int somaTotal;
-    int somaMin;
-    int somaMax;
-    int score;
+    long long int somaTotal;
+    long long int somaMin;
+    long long int somaMax;
+    long long int score;
 
     while(scanf("%d %d", &TAM, &b) != EOF){
 
@@ -130,7 +130,7 @@ int main() {
 
         score = somaTotal - (somaMin + somaMax);
 
-        printf("%d\n", score);
+        printf("%lld\n", score);
     }
     return 0;
 }
