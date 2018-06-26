@@ -1,0 +1,1 @@
+/usr/lib64/ccache/cc -g   CMakeFiles/HashDupla.dir/main.c.o CMakeFiles/HashDupla.dir/HashD.c.o  -o HashDupla 

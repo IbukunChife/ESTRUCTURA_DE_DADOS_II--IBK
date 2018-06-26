@@ -16,12 +16,13 @@ void buildsegTree(int *TreeMin, int *TreeMax ,int* vet , int low, int high, int 
     if (low == high) {
         TreeMin[pos] = vet[low];
        TreeMax[pos] = vet[low];
+        return;
     } else {
         int mid = (low + high) / 2;
-        buildsegTree(TreeMin,TreeMax , vet , low, mid, 2 * pos + 1);
-        buildsegTree(TreeMin, TreeMax , vet , mid + 1, high, 2 * pos + 2);
-        TreeMin[pos] = min(TreeMin[2 * pos + 1], TreeMin[2 * pos + 2]);
-        TreeMax[pos] = max(TreeMax[2 * pos + 1], TreeMax[2 * pos + 2]);
+        buildsegTree(TreeMin,TreeMax , vet , low, mid, 2 * pos );
+        buildsegTree(TreeMin, TreeMax , vet , mid + 1, high, 2 * pos + 1);
+        TreeMin[pos] = min(TreeMin[2 * pos ], TreeMin[2 * pos + 1]);
+        TreeMax[pos] = max(TreeMax[2 * pos ], TreeMax[2 * pos + 1]);
 
     }
 }
@@ -35,8 +36,8 @@ int searchMinimum(int *TreeMin, int low, int high, int qlow, int qhigh, int pos)
         return INT_MAX;
     }
     int mid = (low + high) / 2;
-    return min(searchMinimum(TreeMin, low, mid, qlow, qhigh, 2 * pos + 1),
-               searchMinimum(TreeMin, mid + 1, high, qlow, qhigh, 2 * pos + 2));
+    return min(searchMinimum(TreeMin, low, mid, qlow, qhigh, 2 * pos),
+               searchMinimum(TreeMin, mid + 1, high, qlow, qhigh, 2 * pos + 1));
 }
 
 int searchMaximum(int * TreeMax, int low, int high, int qlow, int qhigh, int pos) {
@@ -48,14 +49,14 @@ int searchMaximum(int * TreeMax, int low, int high, int qlow, int qhigh, int pos
         return INT_MIN;
     }
     int mid = (low + high) / 2;
-    return max(searchMaximum(TreeMax, low, mid, qlow, qhigh, 2 * pos + 1),
-               searchMaximum(TreeMax, mid + 1, high, qlow, qhigh, 2 * pos + 2));
+    return max(searchMaximum(TreeMax, low, mid, qlow, qhigh, 2 * pos ),
+               searchMaximum(TreeMax, mid + 1, high, qlow, qhigh, 2 * pos + 1));
 }
 
 int main() {
 	 int vet[100002];
-     int TreeMin[200005];
-     int TreeMax[200005];
+     int TreeMin[400005];
+     int TreeMax[400005];
     int N, q;
 
     while ((scanf("%d", &N))!= EOF) {
@@ -69,13 +70,13 @@ int main() {
                 int i, p;
                 scanf("%d %d", &i, &p);
                 vet[i] = p;
-                buildsegTree(TreeMin,TreeMax , vet , 1, N, 0);
+                buildsegTree(TreeMin,TreeMax , vet , 1, N, 1);
             }
             if (aus == 2) {
                 int i, j;
                 scanf("%d %d", &i, &j);
-                buildsegTree(TreeMin,TreeMax , vet, 1, N, 0);
-                int dif_preco = searchMaximum(TreeMax, 1, N, i, j, 0) - searchMinimum(TreeMin, 1, N, i, j, 0);
+                buildsegTree(TreeMin,TreeMax , vet, 1, N, 1);
+                int dif_preco = searchMaximum(TreeMax, 1, N, i, j, 1) - searchMinimum(TreeMin, 1, N, i, j, 1);
                 printf("%d\n", dif_preco);
             }
 
