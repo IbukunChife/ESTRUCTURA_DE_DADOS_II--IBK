@@ -1,0 +1,3 @@
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/DuduFaz_1610/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/DuduFaz_1610/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/DuduFaz_1610/cmake-build-debug/CMakeFiles/DuduFaz_1610.dir

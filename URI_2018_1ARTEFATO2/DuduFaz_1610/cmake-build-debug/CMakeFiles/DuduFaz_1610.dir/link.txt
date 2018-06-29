@@ -1,0 +1,1 @@
+/usr/lib64/ccache/c++  -g   CMakeFiles/DuduFaz_1610.dir/main.cpp.o  -o DuduFaz_1610 
