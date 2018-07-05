@@ -1,0 +1,4 @@
+/home/WizIbk/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/PoliceLadrao1905"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/PoliceLadrao1905/cmake-build-debug

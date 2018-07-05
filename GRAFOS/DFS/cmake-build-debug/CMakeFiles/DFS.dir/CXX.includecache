@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/GRAFOS/DFS/Grafos.cpp
+iostream
+-
+Grafos.h
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/GRAFOS/DFS/Grafos.h
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/GRAFOS/DFS/Grafos.h
+iostream
+-
+list
+-
+stack
+-
+utility
+-
+algorithm
+-
+vector
+-
+
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/GRAFOS/DFS/main.cpp
+iostream
+-
+Grafos.h
+/home/WizIbk/Dropbox/4eme Semestre/ESTRUTURAS DE DADOS II/ARQUIVOS EXTRAS/ESTRUCTURA_DE_DADOS_II--IBK/GRAFOS/DFS/Grafos.h
+
