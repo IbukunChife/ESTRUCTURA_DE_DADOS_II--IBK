@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/PaisEmG.dir/main.cpp.o  -o PaisEmG 

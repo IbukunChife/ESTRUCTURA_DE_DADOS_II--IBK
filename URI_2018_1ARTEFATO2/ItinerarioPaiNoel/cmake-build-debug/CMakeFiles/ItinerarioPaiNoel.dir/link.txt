@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ItinerarioPaiNoel.dir/main.cpp.o CMakeFiles/ItinerarioPaiNoel.dir/PNoel.cpp.o  -o ItinerarioPaiNoel 
