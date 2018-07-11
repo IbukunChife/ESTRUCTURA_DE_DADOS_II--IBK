@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ItinerarioPaiNoel.dir/main.cpp.o"
-  "CMakeFiles/ItinerarioPaiNoel.dir/PNoel.cpp.o"
   "ItinerarioPaiNoel.pdb"
   "ItinerarioPaiNoel"
 )

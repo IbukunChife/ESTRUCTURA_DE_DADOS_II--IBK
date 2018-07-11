@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ibk_akaigen/Documentos/Arquivos GitHub/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/ItinerarioPaiNoel/main.cpp
+bits/stdc++.h
+-
+

@@ -123,33 +123,6 @@ ItinerarioPaiNoel/fast:
 	$(MAKE) -f CMakeFiles/ItinerarioPaiNoel.dir/build.make CMakeFiles/ItinerarioPaiNoel.dir/build
 .PHONY : ItinerarioPaiNoel/fast
 
-PNoel.o: PNoel.cpp.o
-
-.PHONY : PNoel.o
-
-# target to build an object file
-PNoel.cpp.o:
-	$(MAKE) -f CMakeFiles/ItinerarioPaiNoel.dir/build.make CMakeFiles/ItinerarioPaiNoel.dir/PNoel.cpp.o
-.PHONY : PNoel.cpp.o
-
-PNoel.i: PNoel.cpp.i
-
-.PHONY : PNoel.i
-
-# target to preprocess a source file
-PNoel.cpp.i:
-	$(MAKE) -f CMakeFiles/ItinerarioPaiNoel.dir/build.make CMakeFiles/ItinerarioPaiNoel.dir/PNoel.cpp.i
-.PHONY : PNoel.cpp.i
-
-PNoel.s: PNoel.cpp.s
-
-.PHONY : PNoel.s
-
-# target to generate assembly for a file
-PNoel.cpp.s:
-	$(MAKE) -f CMakeFiles/ItinerarioPaiNoel.dir/build.make CMakeFiles/ItinerarioPaiNoel.dir/PNoel.cpp.s
-.PHONY : PNoel.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ItinerarioPaiNoel"
-	@echo "... PNoel.o"
-	@echo "... PNoel.i"
-	@echo "... PNoel.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

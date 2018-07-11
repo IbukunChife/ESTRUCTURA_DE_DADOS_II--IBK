@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ibk_akaigen/Documentos/Arquivos GitHub/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/ItinerarioPaiNoel/PNoel.cpp">
-			<Option target="ItinerarioPaiNoel"/>
-		</Unit>
-		<Unit filename="/home/ibk_akaigen/Documentos/Arquivos GitHub/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/ItinerarioPaiNoel/PNoel.h">
-			<Option target="ItinerarioPaiNoel"/>
-		</Unit>
 		<Unit filename="/home/ibk_akaigen/Documentos/Arquivos GitHub/ESTRUCTURA_DE_DADOS_II--IBK/URI_2018_1ARTEFATO2/ItinerarioPaiNoel/main.cpp">
 			<Option target="ItinerarioPaiNoel"/>
 		</Unit>
